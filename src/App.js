@@ -9,7 +9,9 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    li{
+      list-style:none;
+    }
   }
 `;
 class App extends Component {

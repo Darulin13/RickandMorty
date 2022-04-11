@@ -10,7 +10,7 @@ const Container = styled.main`
     flex-direction:column;
     justify-content:space-evenly;
     align-items:center;
-    height:450vh;
+    height:480vh;
 
     div{
         width:95%;  
@@ -29,13 +29,15 @@ const Container = styled.main`
 
 const Box = styled.section`
     width:95%;
-    border:solid white;
+    border:solid black 1px;
     display:flex;
     flex-direction:row;
     color:white;
+    justify-content:space-between;
     border-radius:8px;
 
     img{
+        border-radius:8px;
  
         width:40%;
      
@@ -43,6 +45,35 @@ const Box = styled.section`
     }
 `
 const Info = styled.section`
+    width:58%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    li{
+        list-style-type: circle;
+        list-style-position:inside;
+       
+    }
+    p{
+        font-size:20px;
+
+    }
+    h1{
+        font-size:30px;
+    }
+    h2{
+        color:gray;
+        font-size:20px;
+        font-weight:200;
+    }
+    ul,article{
+        display:flex;
+        flex-direction:column;
+        justify-content:space-evenly;
+        height:33%;
+    
+    }
   
 `
 const api = axios.create({
@@ -75,9 +106,9 @@ export default class Main extends React.Component {
                         <Box>
                             <img src={item.image} alt={item.name} />
                             <Info>
-                                <ul>
+                                <ul >
                                     <h1>{item.name}</h1>
-                                    <li>{item.status} - {item.species}</li>
+                                    <li >{item.status} - {item.species}</li>
                                 </ul>
                                 <article>
                                     <h2>Last known location:</h2>
