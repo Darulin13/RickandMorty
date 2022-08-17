@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import axios from "axios";
+
 
 const Container = styled.footer`
     background-color: rgb(32, 35, 41);
