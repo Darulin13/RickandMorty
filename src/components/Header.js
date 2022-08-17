@@ -100,6 +100,7 @@ const NavegationBar = styled.nav`
         }
         button{
             width:20%;
+          
         
         }
     }
@@ -127,7 +128,7 @@ export default class Header extends React.Component {
             <Container>
                 <div>
                 <NavegationBar>
-                    <img src="" alt="logo" />
+                    <img src="https://repository-images.githubusercontent.com/120371205/b6740400-92d4-11ea-8a13-d5f6e0558e9b" alt="logo" />
                     <ul>
                         <li>Docs</li>
                         <li>About</li>
